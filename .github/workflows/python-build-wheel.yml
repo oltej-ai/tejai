@@ -1,0 +1,14 @@
+name: python-build-wheel
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "python_preview" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build-wheel:
+
+    runs-on: ubuntu-latest
