@@ -1,0 +1,19 @@
+tejai: mlops
+info:
+  title: Kubeflow Template
+  version: 1.0.0
+connector:
+  - tag: kfp
+orchestration:
+  component: Data
+      - name: Data Intake
+      - order: 0
+  component: Preprocess
+      - name: Data preprocessing
+      - order: 1
+  component: Training
+      - name: ML Training
+      - order: 2
+  component: Prediction
+      - name: Prdiction
+      - order: 3
