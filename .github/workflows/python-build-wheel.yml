@@ -3,7 +3,7 @@ name: Python Build Wheel
 on:
   workflow_dispatch:
   push:
-    branches: [ "python_preview" ]
+    branches: [ "main" ]
 
 permissions:
   contents: read
